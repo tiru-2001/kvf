@@ -1,0 +1,60 @@
+.edit-profile-form {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #6f98ae;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+
+    &.submit-btn {
+      background-color: #1a3954;
+      color: white;
+
+      &:hover {
+        background-color: #365e87;
+      }
+    }
+
+    &.cancel-btn {
+      background-color: #828b92;
+      color: white;
+
+      &:hover {
+        background-color: #32373b;
+      }
+    }
+  }
+}

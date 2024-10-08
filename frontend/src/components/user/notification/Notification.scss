@@ -1,0 +1,59 @@
+.notification-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #75839f;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      margin-bottom: 10px;
+      background-color: #ebebeb;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #dedede;
+      }
+
+      .status {
+        &.approved {
+          color: green;
+        }
+
+        &.pending {
+          color: orange;
+        }
+
+        &.rejected {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+}

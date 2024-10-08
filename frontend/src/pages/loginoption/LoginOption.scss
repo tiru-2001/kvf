@@ -1,0 +1,46 @@
+.login-option-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #d3deef;
+  
+    &__logo img {
+        margin-top: 40%;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 30px;
+    }
+  
+    &__options {
+      display: flex;
+      gap: 40px;
+  
+      .login-option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 40%;
+        background-color: #244e93;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+            scale: 120%;
+          background-color: #c8d7f2;
+          color: black;
+        }
+  
+        span {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  
